@@ -9,7 +9,7 @@ public class BankingSystem
 		String custName;
 		int custAge;
 		
-		public void display()
+		public void details() 
 		{
 			Scanner sc=new Scanner(System.in);
 			System.out.println("Enter the Customer Name: ");
@@ -18,6 +18,11 @@ public class BankingSystem
 			custAge=sc.nextInt();
 			System.out.println("Enter the Customer Account Number: ");
 			accNum=sc.nextLong();
+			
+		}
+		public void display()
+		{
+			
 			System.out.println("Bank Name: "+bankName);
 			System.out.println("Name: "+custName);
 			System.out.println("Age: "+custAge);
@@ -30,6 +35,7 @@ public class BankingSystem
 			System.out.println("*************WELCOME TO SBI*************");
 			System.out.println("\n==============================================\n");
 			BankingSystem obj = new BankingSystem();
+			obj.details();
 			obj.display();
 
 		}
